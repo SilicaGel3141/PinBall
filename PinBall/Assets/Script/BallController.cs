@@ -32,8 +32,6 @@ public class BallController : MonoBehaviour {
 		string dtc_tag = collision.collider.tag;	/* 衝突対象のTagを取得 */
 		string disp_score = "Score：";				/* 画面表示文字列 */
 
-		//Debug.Log( dtc_tag );						/* TEST */
-
 		f_disp_ref = true;							/* デフォルトはテキスト更新有に設定 */
 		switch( dtc_tag ) {							/* 衝突対象に応じてスコアを加算 */
 			case "SmallStarTag":
